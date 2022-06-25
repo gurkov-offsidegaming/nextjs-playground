@@ -1,0 +1,35 @@
+{
+  // Configuration for JavaScript files
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "next/core-web-vitals"
+    // "plugin:prettier/recommended"
+  ],
+  "rules": {
+    // Prettier replacement
+    "max-len": [ "warn", { "code": 120 } ],
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "semi": ["error", "never"],
+    "quotes": [ "error", "single" ],
+    "comma-dangle": [ "error", "always-multiline" ],
+    "object-curly-spacing": [ "error", "always" ],
+    "react/jsx-closing-bracket-location": [ 1, {
+      "nonEmpty": "tag-aligned",
+      "selfClosing": "line-aligned"
+    }],
+    "arrow-parens": [ "error", "as-needed" ],
+    "linebreak-style": 0,
+    // End of prettier replacement
+    "import/prefer-default-export": "off",
+    "import/extensions": "off",
+    "no-else-return": "off",
+    "prefer-template": "off", // string concat vs `test ${const}`
+    "arrow-body-style": "off",
+    "no-underscore-dangle": "off", // allow __OSG_LANGUAGE__
+    "operator-linebreak": ["error", "after"],
+    "array-bracket-spacing": ["error", "always", {
+      "objectsInArrays": false,
+      "arraysInArrays": false
+    }]
+  }
+}
